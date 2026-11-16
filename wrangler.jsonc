@@ -28,9 +28,9 @@
     {
       "binding": "MARKET_DB",
       "database_name": "counter-pos-market-accounts",
-      "database_id": "7ca97ff1-257f-4b48-b7c8-d1a408f163e2",
+      "database_id": "00000000-0000-0000-0000-000000000000",
       "migrations_dir": "market-migrations"
     }
   ],
-  "account_id": "ae240d50da44461d1fc5e34f708ebec8"
+  "account_id": "00000000000000000000000000000000"
 }

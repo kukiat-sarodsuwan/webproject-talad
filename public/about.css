@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Noto Sans Thai";
+  src: url("/fonts/noto-sans-thai-thai-wght-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+
+:root { color: #152c25; background: #f5f7f2; font: 16px/1.65 "Noto Sans Thai", system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body, h1, h2, h3, p, dl, dd { margin: 0; }
+a { color: #15553d; }
+a:focus-visible { outline: 3px solid #407f62; outline-offset: 4px; }
+.wrap { width: min(1080px, 100% - 36px); margin-inline: auto; }
+.top { background: #fff; border-bottom: 1px solid #dce5dd; }
+.top-inner, .foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 15px; }
+.wordmark { display: inline-flex; gap: 9px; align-items: center; font-weight: 800; color: #152c25; text-decoration: none; }
+.cta { display: inline-block; padding: 11px 18px; border-radius: 8px; color: #fff; background: #17583f; text-decoration: none; font-weight: 750; }
+.cta:hover { background: #12432f; }
+.cta.small { font-size: 14px; padding: 8px 13px; }
+.hero { background: #e9f1e6; border-bottom: 1px solid #dce5dd; }
+.hero-inner { display: grid; grid-template-columns: 1.45fr 1fr; align-items: center; gap: clamp(28px, 7vw, 90px); padding-block: clamp(44px, 9vw, 103px); }
+.eyebrow { color: #416759; font-size: 12px; font-weight: 800; letter-spacing: .05em; }
+h1 { margin-top: 10px; max-width: 13em; font-size: clamp(35px, 5.7vw, 66px); line-height: 1.2; letter-spacing: -.025em; }
+.intro { max-width: 34em; margin: 16px 0 25px; font-size: clamp(16px, 2vw, 19px); }
+.example, .cards article { background: #fff; border: 1px solid #dce5dd; border-radius: 16px; }
+.example { padding: 24px; }
+.example dl { margin: 11px 0 14px; }
+.example dl div { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; }
+.example dd { font-variant-numeric: tabular-nums; }
+.example .total { border-top: 1px solid #dce5dd; margin-top: 5px; padding-top: 12px; font-weight: 800; }
+.pill { display: inline-block; padding: 3px 10px; border-radius: 99px; background: #deed9a; font-size: 13px; }
+.features, .questions { padding-block: 36px; }
+h2 { font-size: clamp(23px, 4vw, 32px); }
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 16px; }
+.cards article { padding: 20px; }
+.cards h3 { margin: 6px 0; }
+.cards article > p:last-child, .questions dd { color: #425b50; }
+.questions { padding-top: 4px; }
+.questions dl div { border-bottom: 1px solid #dce5dd; padding: 12px 0; }
+.questions dt { font-weight: 750; }
+.foot { color: #425b50; }
+@media (max-width: 640px) {
+  .hero-inner, .cards { grid-template-columns: 1fr; }
+}
