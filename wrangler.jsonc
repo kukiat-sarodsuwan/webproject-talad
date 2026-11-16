@@ -11,7 +11,7 @@
   "services": [
     {
       "binding": "SHOP_DEMO",
-      "service": "counter-pos-store"
+      "service": "counter-pos"
     }
   ],
   "vars": {
