@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "counter-pos-store",
+  "main": "src/backend.mjs",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": false,
+  "preview_urls": false,
+  "vars": {
+    "SHOP_SLUG": "demo"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "counter-pos",
+      "database_id": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "account_id": "00000000000000000000000000000000"
+}

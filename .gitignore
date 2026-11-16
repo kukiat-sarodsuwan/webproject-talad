@@ -1,0 +1,11 @@
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+*.sql.gz
+backup*.sql
+
+wrangler.shop-*.jsonc
+!.dev.vars.example

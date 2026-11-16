@@ -1,0 +1,36 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "counter-pos",
+  "main": "src/frontend.mjs",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "services": [
+    {
+      "binding": "SHOP_DEMO",
+      "service": "counter-pos-store"
+    }
+  ],
+  "vars": {
+    "SHOPS": {
+      "demo": {
+        "binding": "SHOP_DEMO",
+        "label": "ร้าน Counter POS",
+        "enabled": true,
+        "expiresAt": "2030-01-01T00:00:00+07:00"
+      }
+    }
+  },
+  "d1_databases": [
+    {
+      "binding": "MARKET_DB",
+      "database_name": "counter-pos-market-accounts",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "market-migrations"
+    }
+  ],
+  "account_id": "00000000000000000000000000000000"
+}

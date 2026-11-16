@@ -1,0 +1,22 @@
+{
+  "name": "counter-pos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev -c wrangler.jsonc -c wrangler.backend.jsonc",
+    "deploy": "wrangler deploy",
+    "db:local": "wrangler d1 migrations apply DB --local -c wrangler.backend.jsonc",
+    "db:remote": "wrangler d1 migrations apply DB --remote -c wrangler.backend.jsonc",
+    "test": "node --test",
+    "deploy:backend": "wrangler deploy -c wrangler.backend.jsonc",
+    "market:local": "wrangler d1 migrations apply MARKET_DB --local",
+    "market:remote": "wrangler d1 migrations apply MARKET_DB --remote"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
